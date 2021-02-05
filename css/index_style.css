@@ -1,0 +1,491 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+ line-height: 1.5;
+ text-align: left;
+
+
+}
+
+/*****************************************************header************************************************************/
+header
+{
+  background-image: url(../images/intro-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.overlay
+{
+    background-color: rgba(0, 0, 0, .7);
+
+}
+
+.navbar
+{
+    background-color: rgb(0, 0,0, .7);
+    color: white !important;
+}
+
+.nav-item
+{
+    margin-right: 5px;
+}
+
+.nav-link
+{
+    color: white !important;
+}
+
+.navbar-brand
+{
+    color: white   !important;
+}
+
+
+
+.line{     
+    width:0px;
+    height:0px;
+    background-color:white;
+    transition: width .5s, height  .2s
+
+}
+ .nav-item:hover .line
+{
+    width:60px;   
+    height: 1px;
+}
+
+
+.header-caption{
+    font-weight: 800;
+    text-align: center;
+    font-size: 4.5 rem;
+    
+}
+
+.header-caption h3::after 
+{
+    content: "";
+    animation-name: info;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    font-weight: 600;
+    
+}
+
+
+@keyframes info
+{
+
+    0% {content: "G|";}
+    3%{content:"GR|";}
+    5%{content:"GRA|";}
+    7%{content: "GRAP|";}
+    15%{content:"GRAPH|";}
+    18%{content:"GRAPHI|";}
+    20%{content:"GRAPHIC  |";}
+    25% {content: "GRAPHIC D|";}
+    28%{content:"GRAPHIC De|";}
+    32%{content:"GRAPHIC Des|";}
+    37%{content: "GRAPHIC Desi|";}
+    41%{content:"GRAPHIC Desig|";}
+    45%{content:"GRAPHIC Design|";}
+    48%{content:"GRAPHIC Designe|";}
+    52%{content:"GRAPHIC Designer|";}
+    56%{content:"GRAPHIC Designe|";}
+    60%{content:"GRAPHIC Design|";}
+    63%{content:"GRAPHIC Desig|";}
+    67%{content:"GRAPHIC Desi|";}
+    72%{content:" GRAPHIC Des|";}
+    75%{content:"GRAPHIC De|";}
+    78%{content:"GRAPHIC D|";}
+    80% {content: "GRAPHIC|";}
+    82%{content:"GRAPHI|";}
+    85%{content:"GRAPH|";}
+    87%{content: "GRAP|";}
+    90%{content:"GRA|";}
+    93%{content:"GR|";}
+    96%{content:"G |";}
+    100%{content:"|";}
+
+    
+    
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/**********************************about-me section****************************************************************/
+.about-me
+{
+    padding: 6rem   0;
+}
+.line-about
+{
+    width: 150px;
+    background-color: #007bff;
+    height: 3px;
+}
+
+
+.about-me-caption
+{
+    font-size: 20px;
+    
+}
+
+.progress
+{
+    overflow: auto;
+}
+.pull-right
+{
+    float: right;
+}
+
+/**************************************************SERVICES SECTION********************************************/
+.services
+{
+    padding: 6rem 0;
+}
+.line-below
+{
+    width:100px;
+    height:3px ;
+    background-color:#007bff ;
+}
+  .services .cards{
+    transition: 1s background-color  ,  border 1s  ;
+    margin: 20px;
+    padding: 15px;
+    
+}
+.services .cards h5 {
+    margin:1rem 0
+}
+.circle-icon
+{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color:white;
+    border: 5px solid  #0078FF ;
+    border-radius: 50%;
+    transition: .5s background-color,border .5s  ;
+    position: relative;
+    padding: 5px;
+}
+.services i 
+{
+font-size: 3rem;
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+
+
+.services .cards:hover  .circle-icon
+{
+    background-color:#0078FF;
+    border: 5px solid  #CDE1F8 ;
+}
+
+/********************************************counter section**********************************************************/
+
+.counter
+{
+    padding: 10rem 0;
+    background-image:url(../images/post-3.jpg) ;
+    background-attachment: fixed;
+    background-position: cover;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+ .layer-blue
+ {
+   
+    background-color: rgba(75, 155, 240,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+     height: 100%; 
+    width: 100%; 
+    z-index: 99999;
+
+} 
+.icon-card
+{
+    margin: 30px;
+    text-align: center;
+}
+   
+
+
+.counter-icon
+{
+   font-size: 3rem;
+   text-align: center;
+   background-color:transparent;
+   position: relative;
+}
+   
+.counter-icon .fa 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.counter-icons 
+{
+    color: cornsilk;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+
+/**************************************************portfolio SECTION********************************************/
+.portfolio
+{
+    padding: 6rem 0;
+}
+.work i{
+    float: right;
+}
+.work .img
+{
+    overflow: hidden;
+}
+.work img
+{
+    transition: transform 1s;
+
+}
+
+
+.work:hover img{
+    transform: scale(1.2,1.2);
+    
+}
+
+/********************************************slider section**********************************************************/
+
+
+
+.TESTIMONIALS
+{
+    padding: 2rem  0;
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    position: relative;   
+
+}
+
+.layer-slider
+{
+  
+   background-color: rgba(75, 155, 240,.6);
+   position: absolute;
+   top: 0;
+   left: 0;
+    height: 100%; 
+   width: 100%; 
+   z-index: 99;
+
+} 
+
+
+.TESTIMONIALS img
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+transform: translateY(-50%);
+overflow: auto;
+}
+
+
+.owl-dots
+{
+    background-color: brown;
+}
+
+
+.carousel-indicators li
+{
+    width: 40px;
+    height:10px;
+    margin-left: 5px;
+        
+}
+
+.carousel-indicators li:hover
+{
+    width: 50px;
+    background-color: black;
+    border: solid  5px white;
+    transition: .5s width;
+}
+
+
+.carousel-inner
+{
+padding: 50px;
+color: white;
+}
+.TESTIMONIALS .carousel
+{
+    z-index: 9999;
+}
+.carousel-item i
+{
+    color:#0078FF ;
+    background-color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+/**************************************************BLOG SECTION********************************************/
+
+.blog
+{
+    padding: 6rem 0;
+}
+.card-body h5
+{
+   transform: translateY(-150%);
+   width: 100px;
+   padding: 5px;
+   font-size: .7rem;
+   font-weight: 600;
+   color: white;
+
+   
+}
+.card-body a{
+    text-decoration: none;
+}
+.list-group-item   i
+{
+    font-size: .8rem;
+    font-weight: 500  !important;
+    transform: translateY(15px);
+}
+ .card-body  img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+
+
+/**************************************************footer SECTION********************************************/
+.footer
+{
+    padding: 6rem  0  0;
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+
+}
+.footer  .container  ,.footer-bar
+ {
+    position: relative;
+    z-index: 99999;
+ }
+    
+
+
+.layer-footer
+{   
+    background-color: rgba(75, 155, 240,.6);
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  
+
+}
+footer .bg
+{
+    background-color: white;
+    
+
+}
+
+
+.social-icons i  
+{
+   font-size: 30px;
+   margin:5px ;
+   padding: 8px;
+   color: black;
+   border:3px solid #0078FF;
+   border-radius: 50%;
+}
+.social-icons a:hover i 
+{
+    color: white;
+    background-color: #0078FF;
+    border: none;
+    transition: 1s color ,1s  background-color ,2s  border ;
+
+}
+
+.footer-bar{
+    background-color:#0062d3 ;
+    padding: 20px ;
+}
+.copyright-box
+{
+    color: white ;
+
+}
+
+.contacts  i
+{
+    color:#0078FF;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
